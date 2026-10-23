@@ -1,4 +1,5 @@
 const ffmpeg = require('fluent-ffmpeg');
+ffmpeg.setFfmpegPath(require('ffmpeg-static'));
 const args = process.argv.slice(2)
 
 ffmpeg(args[0])
